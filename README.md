@@ -1,44 +1,71 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Здравствуй, дорогой кодер посетивший потроха созданного мной тестового проекта!
 
-## Available Scripts
+Надеюсь они (потроха) оставят у тебя приятное впечатление и не 
+подтолкнут к необдуманым решениям типа суицида, дауншифтинга или смены пола.
 
-In the project directory, you can run:
+До совершенства проект я не довел. Надо как-то остановиться. Думаю сделано достаточно чтобы показать мой уровень. 
 
-### `npm start`
+Так же надеюсь, что на тебя не выпрыгет какой-нть баг, который я просмотрел. 
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+От души желаю, найти причины рекомендовать меня для работы front-end developer-а.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Всего доброго. 
 
-### `npm test`
+Семенихин Андрей (andyfleyer@gmail.com)
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+PS: внизу файла некоторые соображения на тему развития проекта и некоторые покаяния. 
+Особой ценности они не представляют потому угнал в конец файла. В общем, только для особых энтузиастов.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Чтобы было классно сделать если располагать чуть большим временем и не останавливать себя:
+1) В создании транзакции было бы здрово сделать всплывающее окошко (типа тултипа) с уведомлением, 
+что транзакция успешно прошла и с ее деталями. Плавно всплывало чтобы и чекунд через 15 исчезало так же.
+2) Очень уместно было бы добавить транзишины и некоторую анимацию. Плавное повление/удаление и изменение
+стилей сделает интерфейс помягче и подружественней
+3) После совершения транзакции хорошо бы сделать ресет формы. Тут я не успел отладить собственноручно сделаный автокомплит.
+ Потому реализацию ресета решил не делать, а делать вид, что так и задумано. Надеюсь на понимание.
+4) При заполнении поля суммы перевода надо сделать вывод уведомления, если сумма превышает текущий баланс. 
+Сейчас форма не дает ввести сумму превышающую текущий баланс. Если же данные вставляются из теплейта в итории транзакций, то 
+проверка превышения баланса производится серверными API
+5) Хорошо бы сделать локализацию. Вывести все надписи в отдельный ресурс.
+6) Вывести адрес сервера с API в отдельную константу (сейчас повторяется в функциях - не очень красиво)
+7) Хорошо бы все же делать замес этот с Redux. Получится поразборчивее. 
